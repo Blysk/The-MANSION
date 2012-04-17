@@ -1,0 +1,28 @@
+#export @moduleName
+
+//imported modules
+#import XXX
+
+(function @moduleName(@modules) {    
+    /*************************
+    **       PRIVATE        **
+    *************************/
+    //constans
+    var FOO = 0xFF;
+
+    //variables
+    var foo = 'bar';
+        
+    /*************************
+    **       PUBLIC         **
+    *************************/
+	//logic of public functions in here
+	var foo = function @moduleName_foo(){    	
+		alert(foo);
+    }
+
+	//and references here:
+    return {
+        foo: foo  
+    }
+})(@modules);
