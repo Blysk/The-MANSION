@@ -7,6 +7,6 @@
 	
 	window.addEventListener('load', function(){
 		bar.checkMe();
-	});	
+	}, false);	
 
 })(@modules);

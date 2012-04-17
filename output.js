@@ -25,13 +25,13 @@ var fooModule = (function foo() {
     **       PUBLIC         **
     *************************/
 	//logic of public functions in here
-	var foo = function foo_foo(){    	
+	var fuu = function foo_foo(){    	
 		return text;
     }
 
 	//and references here:
     return {
-        foo: foo  
+        fuu: fuu  
     }
 })();
 //#export bar
@@ -46,7 +46,7 @@ var barModule = (function bar(foo) {
     *************************/
 	//logic of public functions in here
 	var checkMe = function bar_checkMe(){    	
-		alert(foo.foo());
+		alert(foo.fuu());
     }
 
 	//and references here:
@@ -63,7 +63,7 @@ var mainModule = (function main(bar) {
 	
 	window.addEventListener('load', function(){
 		bar.checkMe();
-	});	
+	}, false);	
 
 })(barModule);
 } catch (e) { console.error(e); }

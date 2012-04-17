@@ -242,17 +242,19 @@ MANSION.generate = {
 			
 		} else {
 			
-			throw new Error("Wrong parameters!");
+			print("Wrong parameters!");
 			
 		}
 	}
 }
 
-if (arguments[0] === 'build'){
-	
-	MANSION.build.start();
-		
-} else if (arguments[0] === 'generate') {
-	
-	MANSION.generate.start(arguments[1], MANSION.config.defaultSubfolder);	
+switch (arguments[0]) {
+	case 'build':
+		MANSION.build.start();
+		break;
+	case 'generate':
+		MANSION.generate.start(arguments[1], MANSION.config.defaultSubfolder);	
+		break;
+	default:
+		print('Wrong parameter! Choose between [build] and [generate].');
 }

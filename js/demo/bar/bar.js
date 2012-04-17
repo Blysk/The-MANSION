@@ -10,7 +10,7 @@
     *************************/
 	//logic of public functions in here
 	var checkMe = function bar_checkMe(){    	
-		alert(foo.foo());
+		alert(foo.fuu());
     }
 
 	//and references here:

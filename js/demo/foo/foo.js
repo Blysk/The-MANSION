@@ -14,12 +14,12 @@
     **       PUBLIC         **
     *************************/
 	//logic of public functions in here
-	var foo = function foo_foo(){    	
+	var fuu = function foo_foo(){    	
 		return text;
     }
 
 	//and references here:
     return {
-        foo: foo  
+        fuu: fuu  
     }
 })(@modules);
